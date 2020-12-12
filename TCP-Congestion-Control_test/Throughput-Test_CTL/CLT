@@ -1,0 +1,55 @@
+This file contains the command lines used in the test.
+
+Run in Terminal:
+
+sudo python congestion_control_test.py
+
+
+Run in mininet:
+
+mininet-wifi>xterm sta1 sta2
+
+
+
+sta2:
+
+iperf3 -s
+
+
+sta1:
+
+iperf3 -c 10.0.0.2 -t 5
+
+iperf3 -c 10.0.0.2
+
+sysctl -w net.ipv4.tcp_congestion_control=bbr
+
+iperf3 -c 10.0.0.2 -t 5
+
+iperf3 -c 10.0.0.2
+
+
+sysctl -w net.ipv4.tcp_congestion_control=cubic
+
+iperf3 -c 10.0.0.2 -t 5
+
+iperf3 -c 10.0.0.2
+
+sysctl -w net.ipv4.tcp_congestion_control=vegas
+
+iperf3 -c 10.0.0.2 -t 5
+
+iperf3 -c 10.0.0.2
+
+
+
+
+
+
+
+
+
+
+
+
+

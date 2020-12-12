@@ -1,0 +1,39 @@
+send_parameters:
+{
+	"udp":	true,
+	"omit":	0,
+	"time":	20,
+	"parallel":	1,
+	"len":	1472,
+	"bandwidth":	26519000,
+	"client_version":	"3.1.3"
+}
+Connecting to host 10.0.0.1, port 5201
+Setting fair-queue socket pacing to 3314875
+[  4] local 10.0.0.2 port 38423 connected to 10.0.0.1 port 5201
+[ ID] Interval           Transfer     Bandwidth       Total Datagrams
+[  4]   0.00-1.00   sec  1.36 MBytes  11.4 Mbits/sec  967  
+[  4]   1.00-2.00   sec  1.07 MBytes  8.97 Mbits/sec  762  
+[  4]   2.00-3.00   sec  1.08 MBytes  9.07 Mbits/sec  770  
+[  4]   3.00-4.00   sec  1.06 MBytes  8.91 Mbits/sec  757  
+[  4]   4.00-5.00   sec  1.06 MBytes  8.88 Mbits/sec  754  
+[  4]   5.00-6.00   sec  1.11 MBytes  9.29 Mbits/sec  789  
+[  4]   6.00-7.00   sec  1.03 MBytes  8.68 Mbits/sec  737  
+[  4]   7.00-8.00   sec  1.11 MBytes  9.31 Mbits/sec  791  
+[  4]   8.00-9.00   sec  1.06 MBytes  8.89 Mbits/sec  755  
+[  4]   9.00-10.00  sec  1.08 MBytes  9.03 Mbits/sec  767  
+[  4]  10.00-11.00  sec  1.06 MBytes  8.93 Mbits/sec  758  
+[  4]  11.00-12.00  sec  1.07 MBytes  8.94 Mbits/sec  759  
+[  4]  12.00-13.00  sec  1.09 MBytes  9.16 Mbits/sec  778  
+[  4]  13.00-14.00  sec  1.03 MBytes  8.62 Mbits/sec  732  
+[  4]  14.00-15.00  sec  1.09 MBytes  9.17 Mbits/sec  779  
+[  4]  15.00-16.00  sec  1.02 MBytes  8.54 Mbits/sec  725  
+[  4]  16.00-17.00  sec  1.09 MBytes  9.10 Mbits/sec  773  
+[  4]  17.00-18.00  sec  1.08 MBytes  9.02 Mbits/sec  766  
+[  4]  18.00-19.00  sec  1.07 MBytes  8.97 Mbits/sec  762  
+[  4]  20.00-30.61  sec  0.00 Bytes  0.00 bits/sec  0  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Jitter    Lost/Total Datagrams
+[  4]   0.00-30.61  sec  21.7 MBytes  5.95 Mbits/sec  0.000 ms  0/15454 (0%)  
+[  4] Sent 15454 datagrams
+iperf3: interrupt - the client has terminated

@@ -1,0 +1,53 @@
+-----------------------------------------------------------
+Server listening on 5201
+-----------------------------------------------------------
+get_parameters:
+{
+	"udp":	true,
+	"omit":	0,
+	"time":	20,
+	"parallel":	1,
+	"len":	1472,
+	"bandwidth":	26116000,
+	"client_version":	"3.1.3"
+}
+Accepted connection from 10.0.0.2, port 36146
+Setting fair-queue socket pacing to 3264500
+[  5] local 10.0.0.1 port 5201 connected to 10.0.0.2 port 54319
+[ ID] Interval           Transfer     Bandwidth       Jitter    Lost/Total Datagrams
+[  5]   0.00-1.00   sec   748 KBytes  6.12 Mbits/sec  1.213 ms  218/738 (30%)  
+[  5]   1.00-2.00   sec   798 KBytes  6.54 Mbits/sec  1.363 ms  0/555 (0%)  
+[  5]   2.00-30.02  sec  4.31 KBytes  1.26 Kbits/sec  1.127 ms  0/3 (0%)  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Jitter    Lost/Total Datagrams
+[  5]   0.00-30.02  sec  0.00 Bytes  0.00 bits/sec  1.127 ms  218/1296 (17%)  
+get_results
+{
+	"cpu_util_total":	9.041664,
+	"cpu_util_user":	0.514084,
+	"cpu_util_system":	8.527576,
+	"sender_has_retransmits":	0,
+	"streams":	[{
+			"id":	1,
+			"bytes":	18270464,
+			"retransmits":	-1,
+			"jitter":	0,
+			"errors":	0,
+			"packets":	12412
+		}]
+}
+send_results
+{
+	"cpu_util_total":	0.420837,
+	"cpu_util_user":	0.095539,
+	"cpu_util_system":	0.325289,
+	"sender_has_retransmits":	-1,
+	"streams":	[{
+			"id":	1,
+			"bytes":	1586816,
+			"retransmits":	-1,
+			"jitter":	0.001127,
+			"errors":	218,
+			"packets":	1296
+		}]
+}

@@ -1,0 +1,70 @@
+send_parameters:
+{
+	"udp":	true,
+	"omit":	0,
+	"time":	20,
+	"parallel":	1,
+	"len":	1472,
+	"bandwidth":	26116000,
+	"client_version":	"3.1.3"
+}
+Connecting to host 10.0.0.1, port 5201
+Setting fair-queue socket pacing to 3264500
+[  4] local 10.0.0.2 port 54319 connected to 10.0.0.1 port 5201
+[ ID] Interval           Transfer     Bandwidth       Total Datagrams
+[  4]   0.00-1.00   sec  1.17 MBytes  9.79 Mbits/sec  832  
+[  4]   1.00-2.00   sec   799 KBytes  6.55 Mbits/sec  556  
+[  4]   2.00-3.00   sec   850 KBytes  6.96 Mbits/sec  591  
+[  4]   3.00-4.00   sec   821 KBytes  6.72 Mbits/sec  571  
+[  4]   4.00-5.00   sec   841 KBytes  6.89 Mbits/sec  585  
+[  4]   5.00-6.00   sec   844 KBytes  6.91 Mbits/sec  587  
+[  4]   6.00-7.00   sec   829 KBytes  6.80 Mbits/sec  577  
+[  4]   7.00-8.00   sec   855 KBytes  7.01 Mbits/sec  595  
+[  4]   8.00-9.00   sec   814 KBytes  6.67 Mbits/sec  566  
+[  4]   9.00-10.00  sec   857 KBytes  7.02 Mbits/sec  596  
+[  4]  10.00-11.00  sec   825 KBytes  6.76 Mbits/sec  574  
+[  4]  11.00-12.00  sec   857 KBytes  7.02 Mbits/sec  596  
+[  4]  12.00-13.00  sec   838 KBytes  6.87 Mbits/sec  583  
+[  4]  13.00-14.00  sec   966 KBytes  7.91 Mbits/sec  672  
+[  4]  14.00-15.00  sec  1.09 MBytes  9.11 Mbits/sec  774  
+[  4]  15.00-16.00  sec   870 KBytes  7.12 Mbits/sec  605  
+[  4]  16.00-17.00  sec  1018 KBytes  8.34 Mbits/sec  708  
+[  4]  17.00-18.00  sec   937 KBytes  7.68 Mbits/sec  652  
+[  4]  18.00-19.00  sec   848 KBytes  6.95 Mbits/sec  590  
+send_results
+{
+	"cpu_util_total":	9.041664,
+	"cpu_util_user":	0.514084,
+	"cpu_util_system":	8.527576,
+	"sender_has_retransmits":	0,
+	"streams":	[{
+			"id":	1,
+			"bytes":	18270464,
+			"retransmits":	-1,
+			"jitter":	0,
+			"errors":	0,
+			"packets":	12412
+		}]
+}
+get_results
+{
+	"cpu_util_total":	0.420837,
+	"cpu_util_user":	0.095539,
+	"cpu_util_system":	0.325289,
+	"sender_has_retransmits":	-1,
+	"streams":	[{
+			"id":	1,
+			"bytes":	1586816,
+			"retransmits":	-1,
+			"jitter":	0.001127,
+			"errors":	218,
+			"packets":	1296
+		}]
+}
+[  4]  19.00-20.00  sec   865 KBytes  7.09 Mbits/sec  602  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Jitter    Lost/Total Datagrams
+[  4]   0.00-20.00  sec  17.4 MBytes  7.31 Mbits/sec  1.127 ms  218/1296 (17%)  
+[  4] Sent 1296 datagrams
+
+iperf Done.

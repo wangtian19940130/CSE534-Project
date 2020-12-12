@@ -1,0 +1,38 @@
+This file contains the command lines used in the test.
+
+Run in Terminal:
+
+sudo wireshark
+
+sudo python TACK_test.py
+
+
+Run in mininet:
+
+mininet-wifi>sh ifconfig hwsim0 up
+
+mininet-wifi>xterm sta1 sta2
+
+
+
+sta1:
+
+cd fillp-sheep
+cd server
+export LD_LIBRARY_PATH=./
+./server -s server_ip -p server_port -r testcase001
+
+
+
+
+sta2:
+
+cd fillp-sheep
+cd client
+export LD_LIBRARY_PATH=./
+./client -c server_ip -p server_port -r testcase001
+
+
+
+
+
